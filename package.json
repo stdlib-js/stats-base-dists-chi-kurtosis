@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-base-dists-chi-kurtosis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Chi distribution excess kurtosis.",
   "license": "Apache-2.0",
   "author": {
