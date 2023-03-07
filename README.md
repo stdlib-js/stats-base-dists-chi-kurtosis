@@ -32,10 +32,14 @@ The [excess kurtosis][kurtosis] for a [chi][chi-distribution] random variable wi
 
 <!-- <equation class="equation" label="eq:chi_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = {\frac{2}{\sigma ^{2}}}(1-\mu \sigma \gamma_{1}-\sigma^{2})" alt="Excess kurtosis for a chi distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = {\frac{2}{\sigma ^{2}}}(1-\mu \sigma \gamma_{1}-\sigma^{2})" data-equation="eq:chi_kurtosis">
+```math
+\operatorname{Kurt}\left( X \right) = {\frac{2}{\sigma ^{2}}}(1-\mu \sigma \gamma_{1}-\sigma^{2})
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = {\frac{2}{\sigma ^{2}}}(1-\mu \sigma \gamma_{1}-\sigma^{2})" data-equation="eq:chi_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/chi/kurtosis/docs/img/equation_chi_kurtosis.svg" alt="Excess kurtosis for a chi distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -47,14 +51,30 @@ where `μ` is the mean of the distribution, `σ` its standard deviation, and `γ
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-chi-kurtosis
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chi-kurtosis@esm/index.mjs';
+var kurtosis = require( '@stdlib/stats-base-dists-chi-kurtosis' );
 ```
 
 #### kurtosis( k )
@@ -96,15 +116,10 @@ var v = kurtosis( -1.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
-import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chi-kurtosis@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var kurtosis = require( '@stdlib/stats-base-dists-chi-kurtosis' );
 
 var k;
 var v;
@@ -115,10 +130,6 @@ for ( i = 0; i < 10; i++ ) {
     v = kurtosis( k );
     console.log( 'k: %d, Kurt(X,k): %d', k.toFixed( 4 ), v.toFixed( 4 ) );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -150,7 +161,7 @@ for ( i = 0; i < 10; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -194,7 +205,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
