@@ -69,7 +69,7 @@ where `μ` is the mean of the distribution, `σ` its standard deviation, and `γ
 ## Usage
 
 ```javascript
-import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chi-kurtosis@deno/mod.js';
+import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chi-kurtosis@v0.2.2-deno/mod.js';
 ```
 
 #### kurtosis( k )
@@ -114,7 +114,7 @@ var v = kurtosis( -1.0 );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chi-kurtosis@deno/mod.js';
+import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chi-kurtosis@v0.2.2-deno/mod.js';
 
 var k;
 var v;
